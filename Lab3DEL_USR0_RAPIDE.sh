@@ -13,7 +13,7 @@ fi
 # Boucle infinie pour faire clignoter la LED
 while true; do
     echo "1" > "$LED_PATH/brightness"  # Allume la LED
-    usleep 10000                       # Attend 10 ms
+    sleep 0.010                       # Attend 10 ms
     echo "0" > "$LED_PATH/brightness"  # Eteint la LED
-    usleep 10000                       # Attend 10 ms
+    sleep 0.010                       # Attend 10 ms
 done
