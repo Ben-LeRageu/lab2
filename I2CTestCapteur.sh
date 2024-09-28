@@ -17,3 +17,4 @@ if i2cdetect -y -r 2 0x76 0x76 | grep -q UU ; then
     echo "Capteur 2 (adresse $CAPTEUR2_ADDR) est present"
 else
     echo "Capteur 2 (adresse $CAPTEUR2_ADDR) n'est pas detecte"
+fi
